@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    min-height: 100dvh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#formLivro {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+#formLivro input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+#formLivro button {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #444;    
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+#listaDeLivros {
+    list-style-type: none;
+    padding: 0;
+}
+
+#listaDeLivros > div {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#listaDeLivros div .text {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+#listaDeLivros div .button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn {
+    color: white;
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn-editar {
+    background-color: #007bff;
+    transition: background-color 0.3s;
+}
+
+.btn-editar:hover {
+    background-color: #0056b3;
+}
+
+.btn-excluir {
+    background-color: #dc3545;
+    transition: background-color 0.3s;
+}
+
+.btn-excluir:hover {
+    background-color: #a71d2a;
+}

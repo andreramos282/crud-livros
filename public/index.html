@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,20 @@
     <script src="script.js" defer></script>
     <title>Cadastro de Livros</title>
 </head>
-<body>
-    <h1>Cadastro de Livros</h1>
-    <form id="formLivro">
-        <input type="text" id="titulo" placeholder="Título" required>
-        <input type="text" id="autor" placeholder="Autor" required>
-        <input type="text" id="ano" placeholder="Ano" required>
-        <button>Cadastrar Livro</button>
-    </form>
 
-    <h2>Livros cadastrados</h2>
-    <div id="listaDeLivros" class="livros"></div>
+<body>
+    <main>
+        <h1>Cadastro de Livros</h1>
+        <form id="formLivro">
+            <input type="text" id="titulo" placeholder="Título" required>
+            <input type="text" id="autor" placeholder="Autor" required>
+            <input type="text" id="ano" placeholder="Ano" required>
+            <button class="btn">Cadastrar Livro</button>
+        </form>
+
+        <h2>Livros cadastrados</h2>
+        <div id="listaDeLivros" class="livros"></div>
+    </main>
 </body>
+
 </html>

@@ -1,6 +1,4 @@
 async function atualizarListaDeLivros() {
-    console.log("atualizando")
-
     const response = await fetch("/livros")
     const livros = await response.json()
     const listaDeLivros = document.getElementById("listaDeLivros")
@@ -11,9 +9,13 @@ async function atualizarListaDeLivros() {
         const div = document.createElement("div")
         div.className = "livro-item"
         div.innerHTML = `
-            <strong>${livro.titulo}</strong> - ${livro.autor} ${livro.ano}
-            <button class="btn btn-editar" onclick="editarLivro('${livro._id}')">Alterar</button>
-            <button class="btn btn-excluir" onclick="excluirLivro('${livro._id}')">Excluir</button>
+            <div class="text">
+                <strong>${livro.titulo}</strong> - ${livro.autor} ${livro.ano}
+            </div>
+            <div class="button">
+                <button class="btn btn-editar" onclick="editarLivro('${livro._id}')">Alterar</button>
+                <button class="btn btn-excluir" onclick="excluirLivro('${livro._id}')">Excluir</button>
+            </div>
         `
         listaDeLivros.appendChild(div)
     })
