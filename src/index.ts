@@ -3,6 +3,7 @@ import mongoose from "mongoose"
 import bodyParser from "body-parser"
 import cors from "cors"
 import Livro from "./models/livro"
+import path from 'path'
 
 const app = express()
 const PORT = 3000
@@ -79,6 +80,10 @@ app.delete("/livros/:id", async (req: Request, res: Response) => {
     } catch (error) {
         res.status(500).json({ message: "Erro ao deletar livro", error })
     }
+})
+
+app.get("/", (_, res) => {
+    res.sendFile(path.join(__dirname, "../public", "index.html"))
 })
 
 app.listen(PORT, '0.0.0.0', () => {
